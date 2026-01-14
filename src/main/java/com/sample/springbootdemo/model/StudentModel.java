@@ -1,9 +1,18 @@
 package com.sample.springbootdemo.model;
 
+import jakarta.persistence.*;
+
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="student_detail")
 public class StudentModel {
-    private int studentId;
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @Column(name = "student_id")
+    private Integer studentId;
     private String studentName;
-    private int studentAge;
+    private Integer studentAge;
     private String studentPlace;
 
     public StudentModel() {

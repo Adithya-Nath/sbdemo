@@ -18,7 +18,7 @@ public class StudentModel {
     public StudentModel() {
     }
 
-    public StudentModel(int studentId, String studentName, int studentAge, String studentPlace) {
+    public StudentModel(Integer studentId, String studentName, Integer studentAge, String studentPlace) {
         this.studentId = studentId;
         this.studentName = studentName;
         this.studentAge = studentAge;
@@ -29,7 +29,7 @@ public class StudentModel {
         return studentId;
     }
 
-    public void setStudentId(int studentId) {
+    public void setStudentId(Integer studentId) {
         this.studentId = studentId;
     }
 
@@ -45,7 +45,7 @@ public class StudentModel {
         return studentAge;
     }
 
-    public void setStudentAge(int studentAge) {
+    public void setStudentAge(Integer studentAge) {
         this.studentAge = studentAge;
     }
 
